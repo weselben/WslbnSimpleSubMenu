@@ -1,0 +1,58 @@
+.navigation-flyout {
+    width: unset;
+    margin-left: -1rem;
+    right: unset !important; // Neue Regel für die Position
+
+    .container {
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col {
+        padding: 0;
+    }
+
+    &-bar {
+        display: none;
+    }
+
+    &-content {
+        padding: 0 0 10px 0;
+        max-height: unset !important; // Überschreibt das max-height
+    }
+
+    &-categories {
+        flex-direction: column;
+        &:not(.is-level-0) {
+            margin-left: 0;
+        }
+        &.is-level-0 {
+            > .navigation-flyout-col {
+                margin-bottom: 0;
+                flex: 0 0 100%;
+                max-width: unset;
+                padding: 0;
+                &:before {
+                    content: none;
+                }
+            }
+        }
+        // Versteckt Level-1 Spalten (Unterkategorien)
+        &.is-level-1 {
+            > .navigation-flyout-col {
+                display: none !important;
+            }
+        }
+    }
+    &-link {
+        &.is-level-0 {
+            font-weight: normal;
+        }
+        &:hover {
+            padding-left: 0;
+        }
+    }
+}

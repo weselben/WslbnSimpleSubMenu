@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/flyout.html.twig' %}
+
+{% block layout_navigation_flyout_categories %}
+    <div class="col">
+        <div class="navigation-flyout-categories">
+            {% block layout_navigation_flyout_categories_recoursion %}
+                {% sw_include '@Storefront/storefront/layout/navigation/categories.html.twig' with {
+                    navigationTree: navigationTree.children,
+                    navigationMedia: category.media
+                } only %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block layout_navigation_flyout_teaser %}
+{% endblock %}
