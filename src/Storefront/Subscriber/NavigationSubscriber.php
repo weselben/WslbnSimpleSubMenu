@@ -35,6 +35,7 @@ class NavigationSubscriber implements EventSubscriberInterface
             'submenuTextColor' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuTextColor', $salesChannelId),
             'submenuFontSize' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuFontSize', $salesChannelId),
             'submenuLinkHoverColor' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuLinkHoverColor', $salesChannelId),
+            'submenuDepth' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuDepth', $salesChannelId),
         ];
 
         $event->getPagelet()->addExtension('wslbnSimpleSubMenuConfig', new \Shopware\Core\Framework\Struct\ArrayStruct($config));
