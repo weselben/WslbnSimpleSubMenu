@@ -1,1 +1,1 @@
-feat: re-apply 1.0.2 changes
+docs: enhance README.md with new features and user-friendliness
