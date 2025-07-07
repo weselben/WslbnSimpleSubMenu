@@ -1,1 +1,1 @@
-feat: add navigation subscriber
+feat: register navigation subscriber
