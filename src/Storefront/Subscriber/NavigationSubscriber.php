@@ -30,6 +30,13 @@ class NavigationSubscriber implements EventSubscriberInterface
             return;
         }
 
-        // TODO: Add logic to add sub-navigation to the header
+        $config = [
+            'submenuBackgroundColor' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuBackgroundColor', $salesChannelId),
+            'submenuTextColor' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuTextColor', $salesChannelId),
+            'submenuFontSize' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuFontSize', $salesChannelId),
+            'submenuLinkHoverColor' => $this->systemConfigService->get('WslbnSimpleSubMenu.config.submenuLinkHoverColor', $salesChannelId),
+        ];
+
+        $event->getPagelet()->addExtension('wslbnSimpleSubMenuConfig', new \Shopware\Core\Framework\Struct\ArrayStruct($config));
     }
 }
