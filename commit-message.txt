@@ -1,1 +1,1 @@
-feat: add active switch to config
+feat: add navigation subscriber
