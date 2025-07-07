@@ -4,15 +4,12 @@
 
 *   **Plugin Activation Switch:** Added a configuration switch (`active`) to enable/disable the plugin per sales channel in `config.xml`.
 *   **Customizable CSS via Plugin Configuration:** Implemented fields in `config.xml` for `submenuBackgroundColor`, `submenuTextColor`, `submenuFontSize`, and `submenuLinkHoverColor`. These values are retrieved by the `NavigationSubscriber` and applied dynamically in `flyout.html.twig`.
+*   **Basic Template for Sub-Navigation:** Created a dedicated Twig template (`simple-sub-menu.html.twig`) for rendering the actual sub-navigation structure and integrated it into `flyout.html.twig`.
+*   **Default Styling:** Added basic SCSS/CSS to provide a default visual appearance for the sub-navigation that aligns with Shopware's default theme, while still allowing overrides via the customizable CSS options.
+*   **Customizable Depth:** Implemented a configuration option (`submenuDepth`) to control how many levels of subcategories are displayed in the sub-menu.
+*   **Selective Display:** Added a configuration option (`selectiveCategoryIds`) to choose which main categories will trigger the display of the sub-menu.
 
 ## Planned Features
-
-### Core Functionality & Display
-
-*   **Basic Template for Sub-Navigation:** Create a dedicated Twig template to render the actual sub-navigation structure (e.g., `simple-sub-menu.html.twig`). This will replace the current placeholder and allow for more complex sub-menu layouts.
-*   **Default Styling:** Add basic SCSS/CSS to provide a default visual appearance for the sub-navigation that aligns with Shopware's default theme, while still allowing overrides via the customizable CSS options.
-*   **Customizable Depth:** Implement a configuration option to control how many levels of subcategories are displayed in the sub-menu.
-*   **Selective Display:** Add a configuration option to choose which main categories (e.g., by ID or a custom flag) will trigger the display of the sub-menu.
 
 ### Advanced User Experience
 
