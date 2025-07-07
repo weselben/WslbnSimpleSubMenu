@@ -1,4 +1,4 @@
-{%  sw_extends '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+{% sw_extends '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
 
 {% block layout_main_navigation_menu_home %}
     {% if context.salesChannel.translated.homeEnabled %}
@@ -11,4 +11,10 @@
             </div>
         </a>
     {% endif %}
+{% endblock %}
+
+{% block layout_main_navigation_navigation_item %}
+    <li class="nav-item navigation-list-item" data-simple-sub-menu="true">
+        {{ parent() }}
+    </li>
 {% endblock %}

@@ -1,1 +1,1 @@
-feat: add SCSS for flyout/dropdown menu styling
+feat: add data attribute to navigation items for JS interaction
