@@ -1,0 +1,44 @@
+{
+  "name": "weselben/simple-sub-menu",
+  "description": "Simple Sub Menu (NG)",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "memoryGroup",
+      "homepage": "https://memorygroup.net"
+    },
+	{
+      "name": "weselben",
+      "homepage": "https://github.com/weselben"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.5.0 || ~6.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wslbn\\SimpleSubMenu\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Wslbn\\SimpleSubMenu\\WslbnSimpleSubMenu",
+    "label": {
+      "de-DE": "Simple Sub Menu",
+      "en-GB": "Simple sub menu"
+    },
+    "description": {
+      "de-DE": "Simple Sub Menu Erweiterung für Shopware",
+      "en-GB": "Simple sub menu extension for Shopware"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://memorygroup.net",
+      "en-GB": "https://memorygroup.net"
+    },
+    "supportLink": {
+      "de-DE": "https://memorygroup.net",
+      "en-GB": "https://memorygroup.net"
+    }
+  }
+}
