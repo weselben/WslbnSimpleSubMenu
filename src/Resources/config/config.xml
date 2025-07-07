@@ -16,5 +16,29 @@
             <label>Home icon</label>
             <label lang="de-DE">Home Icon</label>
         </input-field>
+
+        <input-field type="colorpicker">
+            <name>submenuBackgroundColor</name>
+            <label>Submenu Background Color</label>
+            <label lang="de-DE">Hintergrundfarbe des Submenüs</label>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>submenuTextColor</name>
+            <label>Submenu Text Color</label>
+            <label lang="de-DE">Textfarbe des Submenüs</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>submenuFontSize</name>
+            <label>Submenu Font Size (e.g., 14px, 1em)</label>
+            <label lang="de-DE">Schriftgröße des Submenüs (z.B. 14px, 1em)</label>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>submenuLinkHoverColor</name>
+            <label>Submenu Link Hover Color</label>
+            <label lang="de-DE">Link-Hover-Farbe des Submenüs</label>
+        </input-field>
     </card>
 </config>
