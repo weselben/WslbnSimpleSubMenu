@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.4 - 2025-07-07
+
+### Added
+
+- Added a `submenuDepth` configuration option to `config.xml` to control the recursion depth of the sub-menu.
+- Implemented logic in `NavigationSubscriber` to retrieve and pass `submenuDepth` to the Twig templates.
+- Modified `flyout.html.twig` and `simple-sub-menu.html.twig` to use `submenuDepth` for controlling the display of sub-levels.
+
 ## 1.0.3 - 2025-07-07
 
 ### Added

@@ -1,1 +1,1 @@
-feat: implement customizable submenu depth
+docs: update CHANGELOG.md for 1.0.4
