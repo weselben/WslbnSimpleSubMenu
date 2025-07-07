@@ -1,1 +1,1 @@
-feat: implement selective submenu display by category ID
+docs: update CHANGELOG.md for 1.0.5

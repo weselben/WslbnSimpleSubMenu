@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.5 - 2025-07-07
+
+### Added
+
+- Added a `selectiveCategoryIds` configuration option to `config.xml` to control which main categories display the sub-menu.
+- Implemented logic in `NavigationSubscriber` to retrieve and pass `selectiveCategoryIds` to the Twig template.
+- Modified `flyout.html.twig` to conditionally display the sub-menu based on the `selectiveCategoryIds` configuration.
+
 ## 1.0.4 - 2025-07-07
 
 ### Added
