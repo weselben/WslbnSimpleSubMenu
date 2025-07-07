@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.6 - 2025-07-07
+
+### Added
+
+- Implemented basic flyout/dropdown menu functionality using JavaScript (`simple-sub-menu.plugin.js`).
+- Added SCSS styling for flyout/dropdown menus in `base.scss`.
+- Modified `navigation.html.twig` to include a data attribute for JavaScript interaction.
+
 ## 1.0.5 - 2025-07-07
 
 ### Added
