@@ -1,0 +1,20 @@
+{% block layout_navigation_simple_sub_menu %}
+    <div class="simple-sub-menu">
+        {% if navigationTree.children is not empty %}
+            <ul class="simple-sub-menu-list">
+                {% for item in navigationTree.children %}
+                    <li class="simple-sub-menu-item">
+                        <a href="{{ item.url }}" class="simple-sub-menu-link">
+                            {{ item.name }}
+                        </a>
+                        {% if item.children is not empty %}
+                            {% sw_include '@WslbnSimpleSubMenu/storefront/layout/navigation/simple-sub-menu.html.twig' with {
+                                navigationTree: item
+                            } only %}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endblock %}
