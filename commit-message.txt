@@ -1,1 +1,1 @@
-feat: retrieve and pass selectiveCategoryIds to subscriber
+feat: implement selective submenu display by category ID

@@ -17,11 +17,21 @@
                 </style>
             {% endif %}
             {% block layout_navigation_flyout_categories_recoursion %}
-                {% sw_include '@WslbnSimpleSubMenu/storefront/layout/navigation/simple-sub-menu.html.twig' with {
-                    navigationTree: navigationTree,
-                    currentDepth: 0,
-                    maxDepth: config.submenuDepth
-                } only %}
+                {% set displaySubMenu = true %}
+                {% if config.selectiveCategoryIds is not empty %}
+                    {% set selectedIds = config.selectiveCategoryIds|split(',') %}
+                    {% if navigationTree.id is not in selectedIds %}
+                        {% set displaySubMenu = false %}
+                    {% endif %}
+                {% endif %}
+
+                {% if displaySubMenu %}
+                    {% sw_include '@WslbnSimpleSubMenu/storefront/layout/navigation/simple-sub-menu.html.twig' with {
+                        navigationTree: navigationTree,
+                        currentDepth: 0,
+                        maxDepth: config.submenuDepth
+                    } only %}
+                {% endif %}
             {% endblock %}
         </div>
     </div>
