@@ -6,6 +6,12 @@
         <title lang="de-DE">WslbnSimpleSubMenu Einstellungen</title>
 
         <input-field type="bool">
+            <name>active</name>
+            <label>Active</label>
+            <label lang="de-DE">Aktiv</label>
+        </input-field>
+
+        <input-field type="bool">
             <name>homeIcon</name>
             <label>Home icon</label>
             <label lang="de-DE">Home Icon</label>
