@@ -1,1 +1,1 @@
-chore: increment version to 1.0.6
+docs: update TODO.md with completed flyout/dropdown feature

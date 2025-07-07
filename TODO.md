@@ -8,12 +8,12 @@
 *   **Default Styling:** Added basic SCSS/CSS to provide a default visual appearance for the sub-navigation that aligns with Shopware's default theme, while still allowing overrides via the customizable CSS options.
 *   **Customizable Depth:** Implemented a configuration option (`submenuDepth`) to control how many levels of subcategories are displayed in the sub-menu.
 *   **Selective Display:** Added a configuration option (`selectiveCategoryIds`) to choose which main categories will trigger the display of the sub-menu.
+*   **Flyout/Dropdown Menus:** Enhanced the sub-menu to function as a modern flyout or dropdown menu, improving user interaction and navigation flow.
 
 ## Planned Features
 
 ### Advanced User Experience
 
-*   **Flyout/Dropdown Menus:** Enhance the sub-menu to function as a modern flyout or dropdown menu, improving user interaction and navigation flow.
 *   **Mobile Responsiveness:** Ensure the sub-menu is fully responsive and provides an optimal user experience on all mobile devices and screen sizes.
 *   **Full Custom CSS Snippet (Advanced):** Explore adding a `textarea` field in `config.xml` to allow users to inject a custom CSS snippet directly. This would provide maximum flexibility for advanced users but requires careful consideration for security and validation.
 
