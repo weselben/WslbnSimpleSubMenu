@@ -3,6 +3,19 @@
 {% block layout_navigation_flyout_categories %}
     <div class="col">
         <div class="navigation-flyout-categories">
+            {% if page.extensions.wslbnSimpleSubMenuConfig is not empty %}
+                {% set config = page.extensions.wslbnSimpleSubMenuConfig %}
+                <style>
+                    .navigation-flyout-categories {
+                        {% if config.submenuBackgroundColor %}background-color: {{ config.submenuBackgroundColor }};{% endif %}
+                        {% if config.submenuTextColor %}color: {{ config.submenuTextColor }};{% endif %}
+                        {% if config.submenuFontSize %}font-size: {{ config.submenuFontSize }};{% endif %}
+                    }
+                    .navigation-flyout-categories a:hover {
+                        {% if config.submenuLinkHoverColor %}color: {{ config.submenuLinkHoverColor }};{% endif %}
+                    }
+                </style>
+            {% endif %}
             {% block layout_navigation_flyout_categories_recoursion %}
                 {% sw_include '@Storefront/storefront/layout/navigation/categories.html.twig' with {
                     navigationTree: navigationTree.children,

@@ -1,1 +1,1 @@
-feat: retrieve and pass CSS config to subscriber
+feat: apply dynamic CSS in Twig template
