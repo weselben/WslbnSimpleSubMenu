@@ -1,1 +1,1 @@
-feat: retrieve and pass submenuDepth to subscriber
+feat: implement customizable submenu depth

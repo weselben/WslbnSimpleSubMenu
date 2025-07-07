@@ -1,6 +1,6 @@
 {% block layout_navigation_simple_sub_menu %}
     <div class="simple-sub-menu">
-        {% if navigationTree.children is not empty %}
+        {% if navigationTree.children is not empty and (maxDepth == 0 or currentDepth < maxDepth) %}
             <ul class="simple-sub-menu-list">
                 {% for item in navigationTree.children %}
                     <li class="simple-sub-menu-item">
@@ -9,7 +9,9 @@
                         </a>
                         {% if item.children is not empty %}
                             {% sw_include '@WslbnSimpleSubMenu/storefront/layout/navigation/simple-sub-menu.html.twig' with {
-                                navigationTree: item
+                                navigationTree: item,
+                                currentDepth: currentDepth + 1,
+                                maxDepth: maxDepth
                             } only %}
                         {% endif %}
                     </li>

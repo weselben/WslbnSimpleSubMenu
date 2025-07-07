@@ -18,7 +18,9 @@
             {% endif %}
             {% block layout_navigation_flyout_categories_recoursion %}
                 {% sw_include '@WslbnSimpleSubMenu/storefront/layout/navigation/simple-sub-menu.html.twig' with {
-                    navigationTree: navigationTree
+                    navigationTree: navigationTree,
+                    currentDepth: 0,
+                    maxDepth: config.submenuDepth
                 } only %}
             {% endblock %}
         </div>
