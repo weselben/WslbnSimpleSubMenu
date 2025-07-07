@@ -56,3 +56,26 @@
         }
     }
 }
+
+.simple-sub-menu {
+    .simple-sub-menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .simple-sub-menu-item {
+            margin-bottom: 5px;
+
+            .simple-sub-menu-link {
+                display: block;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: inherit; /* Inherit color from parent, overridden by config */
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

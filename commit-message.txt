@@ -1,1 +1,1 @@
-feat: integrate simple-sub-menu template into flyout
+feat: add basic CSS for simple-sub-menu
