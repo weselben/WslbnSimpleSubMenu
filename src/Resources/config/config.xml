@@ -17,6 +17,13 @@
             <label lang="de-DE">Home Icon</label>
         </input-field>
 
+        <input-field type="number">
+            <name>submenuDepth</name>
+            <label>Submenu Depth</label>
+            <label lang="de-DE">Submenü-Tiefe</label>
+            <help-text>Controls how many levels of subcategories are displayed (e.g., 1 for only direct children, 0 for unlimited).</help-text>
+        </input-field>
+
         <input-field type="colorpicker">
             <name>submenuBackgroundColor</name>
             <label>Submenu Background Color</label>
