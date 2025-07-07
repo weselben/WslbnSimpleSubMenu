@@ -57,7 +57,31 @@
     }
 }
 
+.navigation-list-item {
+    position: relative;
+
+    &.is-open {
+        .simple-sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}
+
 .simple-sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    min-width: 200px; // Example min-width
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); // Example shadow
+    padding: 10px; // Example padding
+
     .simple-sub-menu-list {
         list-style: none;
         padding: 0;

@@ -1,1 +1,1 @@
-feat: implement basic flyout/dropdown menu logic in JS
+feat: add SCSS for flyout/dropdown menu styling
