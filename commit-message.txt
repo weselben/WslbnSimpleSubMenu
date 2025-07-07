@@ -1,1 +1,1 @@
-feat: add selectiveCategoryIds field to config.xml
+feat: retrieve and pass selectiveCategoryIds to subscriber
