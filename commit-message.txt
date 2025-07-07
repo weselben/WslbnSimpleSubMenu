@@ -1,1 +1,1 @@
-feat: create basic sub-menu Twig template
+feat: integrate simple-sub-menu template into flyout

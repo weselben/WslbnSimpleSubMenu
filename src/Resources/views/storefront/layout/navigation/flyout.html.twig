@@ -17,9 +17,8 @@
                 </style>
             {% endif %}
             {% block layout_navigation_flyout_categories_recoursion %}
-                {% sw_include '@Storefront/storefront/layout/navigation/categories.html.twig' with {
-                    navigationTree: navigationTree.children,
-                    navigationMedia: category.media
+                {% sw_include '@WslbnSimpleSubMenu/storefront/layout/navigation/simple-sub-menu.html.twig' with {
+                    navigationTree: navigationTree
                 } only %}
             {% endblock %}
         </div>
