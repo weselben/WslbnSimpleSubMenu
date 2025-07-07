@@ -103,16 +103,5 @@
         }
     }
 
-    @media (max-width: 767px) {
-        position: static;
-        width: 100%;
-        transform: translateY(0);
-        box-shadow: none;
-        padding: 0;
-        transition: none;
-
-        .simple-sub-menu-list {
-            padding-left: 20px; // Indent sub-items on mobile
-        }
-    }
+    
 }
