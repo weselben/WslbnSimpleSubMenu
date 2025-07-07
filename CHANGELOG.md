@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3 - 2025-07-07
+
+### Added
+
+- Created a basic Twig template (`simple-sub-menu.html.twig`) for rendering the sub-navigation.
+- Integrated the new sub-menu template into `flyout.html.twig`.
+- Added basic SCSS styling for the `simple-sub-menu`.
+
 ## 1.0.2 - 2025-07-07
 
 ### Added

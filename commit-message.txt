@@ -1,1 +1,1 @@
-feat: add basic CSS for simple-sub-menu
+docs: update CHANGELOG.md for 1.0.3
