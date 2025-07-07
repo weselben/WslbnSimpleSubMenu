@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7 - 2025-07-07
+
+### Added
+
+- Added basic mobile responsiveness to the sub-menu styling in `base.scss`.
+
 ## 1.0.6 - 2025-07-07
 
 ### Added
