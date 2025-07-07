@@ -1,1 +1,1 @@
-docs: enhance README.md with detailed features, usage, and memorygroup-eu link
+feat: add selectiveCategoryIds field to config.xml

@@ -47,5 +47,13 @@
             <label>Submenu Link Hover Color</label>
             <label lang="de-DE">Link-Hover-Farbe des Submenüs</label>
         </input-field>
+
+        <input-field type="text">
+            <name>selectiveCategoryIds</name>
+            <label>Selective Category IDs</label>
+            <label lang="de-DE">Selektive Kategorie-IDs</label>
+            <help-text>Enter comma-separated category IDs where the sub-menu should be displayed. Leave empty to display for all categories.</help-text>
+        </input-field>
+    </card>
     </card>
 </config>
